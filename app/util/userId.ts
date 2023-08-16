@@ -1,4 +1,4 @@
-import { getUniqueId } from "@util/getUniqueId";
+import { getUniqueId } from ".";
 
 /**
  * an IIFE used to identify the selected dropdown value per user, where each user gets a random id assigned,

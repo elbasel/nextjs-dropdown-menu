@@ -3,10 +3,10 @@
 import "server-only";
 import { kv } from "@vercel/kv";
 import { revalidatePath } from "next/cache";
-import type { StoreKey } from "./StoreKey.type";
-import { userId } from "./userId";
+import { userId } from "@util";
+import type { StoreKey } from ".";
 
-export const setServerSideValue = async <T>(
+export const setStoreValue = async <T>(
   key: StoreKey,
   value: any,
   pathToRevalidate = "/"

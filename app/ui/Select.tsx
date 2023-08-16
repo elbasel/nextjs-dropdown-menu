@@ -3,10 +3,10 @@
 // import { experimental_useOptimistic as useOptimistic } from "react";
 import { type ChangeEvent, useTransition, useState } from "react";
 import { type Option } from "@lib";
-import { type StoreKey, setServerSideValue } from "@actions";
+import { type StoreKey, setStoreValue } from "@store";
 
 interface Props {
-  storeKey: StoreKey;
+  storeKey?: StoreKey;
   initialValue?: string;
   options: Option[];
   name?: string;
@@ -34,19 +34,25 @@ export const Select = ({
     startSettingCategory(() => {
       // * Could be replaced with useOptimistic if needed.
       setClientSideValue(optionName);
-      setServerSideValue(storeKey, optionId);
+      if (!storeKey) return;
+      setStoreValue(storeKey, optionId);
     });
   };
 
   return (
-    <>
-      <select value={clientSideValue} onChange={onChange} name={name} id={id}>
-        {options.map(({ id, name }) => (
-          <option key={id} value={name} onClick={(e) => console.log(e)}>
-            {name}
-          </option>
-        ))}
-      </select>
-    </>
+    <select
+      dir="ltr"
+      lang="ar"
+      value={clientSideValue}
+      onChange={onChange}
+      name={name}
+      id={id}
+    >
+      {options.map(({ id, name }) => (
+        <option key={id} value={name} onClick={(e) => console.log(e)}>
+          {name}
+        </option>
+      ))}
+    </select>
   );
 };

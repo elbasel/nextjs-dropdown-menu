@@ -1,6 +1,5 @@
-import { getDefaultId } from "./getDefaultId";
-import { getCategory } from "./getCategory";
-import { getMainOptions } from "./getMainOptions";
-import { getSubOptions } from "./getSubOptions";
+import { getStoredValue } from "./getStoredValue";
+import { setStoreValue } from "./setStoreValue";
+import type { StoreKey } from "./StoreKey.type";
 
-export { getDefaultId, getCategory, getMainOptions, getSubOptions };
+export { StoreKey, getStoredValue, setStoreValue };

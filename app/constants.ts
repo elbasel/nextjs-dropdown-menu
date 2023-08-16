@@ -1,0 +1,1 @@
+export const DEFAULT_CAT_ID = 1

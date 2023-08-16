@@ -2,15 +2,15 @@
 
 import "server-only";
 import { kv } from "@vercel/kv";
-import type { StoreKey } from "./StoreKey.type";
-import { userId } from "./userId";
+import { userId } from "@util";
+import type { StoreKey } from ".";
 
 /**
  *
  * @param key The redis database key
  * @returns Either the value (any) or undefined if the key is not found in the database
  */
-export const getServerSideValue = async <T>(
+export const getStoredValue = async <T>(
   key: StoreKey
 ): Promise<T | undefined> => {
   const value: T | null = await kv.get<T>(key + userId);

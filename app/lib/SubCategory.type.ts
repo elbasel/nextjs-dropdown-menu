@@ -1,4 +1,4 @@
-import { Category } from "./Category.type";
+import { Category } from ".";
 
 export interface SubCategory extends Category {
   slug: string;

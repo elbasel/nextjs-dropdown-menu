@@ -1,5 +1,5 @@
-import { Category } from "./Category.type";
-import { SubCategory } from "./SubCategory.type";
+import { Category } from ".";
+import { SubCategory } from ".";
 
 export interface MainCategory extends Category {
   children: SubCategory[];
