@@ -1,10 +1,8 @@
 "use client";
 
 import { type ChangeEvent, useTransition, useState } from "react";
-import { StoreKey } from "@store/StoreKey.type";
-import { setServerSideValue } from "@store/setServerSideValue";
-import { getUniqueId } from "@util/getUniqueId";
 import { Option } from "@lib/Option.type";
+import { StoreKey, setServerSideValue } from "@actions";
 
 interface Props {
   storeKey: StoreKey;
@@ -41,12 +39,8 @@ export const Select = ({
   return (
     <>
       <select value={clientSideValue} onChange={onChange} name={name} id={id}>
-        {options.map(({id, name}) => (
-          <option
-            key={id}
-            value={name}
-            onClick={(e) => console.log(e)}
-          >
+        {options.map(({ id, name }) => (
+          <option key={id} value={name} onClick={(e) => console.log(e)}>
             {name}
           </option>
         ))}
