@@ -10,7 +10,7 @@ const Home = async () => {
   if (!mainId) mainId = defaultId;
   const mainCategory = getCategory(mainId);
   const subCategories = mainCategory?.children ?? [];
-  // * If we want the sub-categories to be empty on the initial render;
+  // * Or if we want the sub-categories to be empty on the initial render;
   // const subCategories =
   //   mainId === defaultId && !mainId ? [] : mainCategory?.children;
 
