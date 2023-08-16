@@ -33,6 +33,7 @@ export const Select = ({ options, initialValue }: Props) => {
 
     if (selectElem && initialCategoryName)
       selectElem.value = initialCategoryName;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
