@@ -4,7 +4,7 @@ import { type ChangeEvent, useTransition, useState } from "react";
 import { StoreKey } from "@store/StoreKey.type";
 import { setServerSideValue } from "@store/setServerSideValue";
 import { getUniqueId } from "@util/getUniqueId";
-import { Option } from "@lib/Option/Option.type";
+import { Option } from "@lib/Option.type";
 
 interface Props {
   storeKey: StoreKey;
@@ -41,13 +41,13 @@ export const Select = ({
   return (
     <>
       <select value={clientSideValue} onChange={onChange} name={name} id={id}>
-        {options.map((op) => (
+        {options.map(({id, name}) => (
           <option
-            key={getUniqueId()}
-            value={op.name}
+            key={id}
+            value={name}
             onClick={(e) => console.log(e)}
           >
-            {op.name}
+            {name}
           </option>
         ))}
       </select>
