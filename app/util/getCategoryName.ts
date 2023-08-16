@@ -1,6 +1,6 @@
 import categories from "../categories.json";
 
-export const getCategoryName = (categoryId: number | null) => {
+export const getCategoryName = (categoryId?: number) => {
   if (categoryId === null) return;
 
   const categoryName = categories.data.categories.find(

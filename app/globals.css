@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    padding-inline: 10vw;
+    padding-block: 5vh;
+    min-width: 100vh;
+    overflow-x: hidden;
+  }
+}

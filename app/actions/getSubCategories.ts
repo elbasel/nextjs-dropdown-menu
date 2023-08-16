@@ -1,7 +1,13 @@
-import type { SubCategory } from "@lib/SubCategory.type";
+"use server";
+
 import categories from "../categories.json";
 
-export const getSubCategories = (categoryId: number): SubCategory[] => {
+/**
+ * Raises an error in case of a non-existant Id
+ * @returns undefined if categoryId is undefined, otherwise the category
+ */
+export const getSubCategories = (categoryId?: number) => {
+  if (!categoryId) return;
   const mainCategory = categories.data.categories.find(
     (c) => c.id === categoryId
   );

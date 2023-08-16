@@ -1,52 +1,53 @@
 "use client";
 
-import { selectMainCategory } from "@actions/selectMainCategory";
-import { getCategoryId } from "@util/getCategoryId";
-import { getCategoryName } from "@util/getCategoryName";
-import {
-  type ChangeEvent,
-  useTransition,
-  useRef,
-  useEffect,
-} from "react";
+import { type ChangeEvent, useTransition, useState } from "react";
+import { StoreKey } from "@store/StoreKey.type";
+import { setServerSideValue } from "@store/setServerSideValue";
+import { getUniqueId } from "@util/getUniqueId";
+import { Option } from "@lib/Option/Option.type";
 
 interface Props {
-  options: string[];
-  initialValue: number | null;
+  storeKey: StoreKey;
+  initialValue?: string;
+  options: Option[];
+  name?: string;
+  id?: string;
 }
 
-export const Select = ({ options, initialValue }: Props) => {
-  const selectRef = useRef<HTMLSelectElement>(null);
+export const Select = ({
+  storeKey,
+  options,
+  initialValue,
+  name,
+  id = name,
+}: Props) => {
   const [isSettingCategory, startSettingCategory] = useTransition();
+  const [clientSideValue, setClientSideValue] = useState(initialValue);
 
   const onChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    const categotryName = event.target.value;
-    const categoryId = getCategoryId(categotryName);
+    const optionName = event.target.value;
+    const optionId = options.find((op) => op.name === optionName)?.id;
+    const environ = process.env["NODE_ENV"];
+
+    if (!optionId && environ === "development")
+      throw new Error("Invalid optionId");
+
+    setClientSideValue(optionName);
     startSettingCategory(() => {
-      selectMainCategory(Number(categoryId));
+      setServerSideValue(storeKey, optionId);
     });
   };
 
-  useEffect(() => {
-    const selectElem = selectRef.current;
-    const initialCategoryName = getCategoryName(initialValue);
-
-    if (selectElem && initialCategoryName)
-      selectElem.value = initialCategoryName;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   return (
     <>
-      <select
-        ref={selectRef}
-        onChange={onChange}
-        name="main-category"
-        id="main-category"
-      >
+      <select value={clientSideValue} onChange={onChange} name={name} id={id}>
         {options.map((op) => (
-          <option key={op} value={op}>
-            {op}
+          <option
+            key={getUniqueId()}
+            value={op.name}
+            onClick={(e) => console.log(e)}
+          >
+            {op.name}
           </option>
         ))}
       </select>
