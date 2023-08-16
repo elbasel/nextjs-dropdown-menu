@@ -1,8 +1,9 @@
 "use client";
 
+// import { experimental_useOptimistic as useOptimistic } from "react";
 import { type ChangeEvent, useTransition, useState } from "react";
-import { Option } from "@lib/Option.type";
-import { StoreKey, setServerSideValue } from "@actions";
+import { type Option } from "@lib";
+import { type StoreKey, setServerSideValue } from "@actions";
 
 interface Props {
   storeKey: StoreKey;
@@ -30,8 +31,9 @@ export const Select = ({
     if (!optionId && environ === "development")
       throw new Error("Invalid optionId");
 
-    setClientSideValue(optionName);
     startSettingCategory(() => {
+      // * Could be replaced with useOptimistic if needed.
+      setClientSideValue(optionName);
       setServerSideValue(storeKey, optionId);
     });
   };

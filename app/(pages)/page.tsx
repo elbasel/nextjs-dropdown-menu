@@ -4,11 +4,15 @@ import { Select } from "@ui";
 
 const Home = async () => {
   const mainOptions = getMainOptions();
+  const defaultId = getDefaultId();
 
   let mainId = await getServerSideValue<number>("selectedMainCategory");
-  if (!mainId) mainId = getDefaultId();
+  if (!mainId) mainId = defaultId;
   const mainCategory = getCategory(mainId);
-  const subCategories = mainCategory?.children;
+  const subCategories = mainCategory?.children ?? [];
+  // * If we want the sub-categories to be empty on the initial render;
+  // const subCategories =
+  //   mainId === defaultId && !mainId ? [] : mainCategory?.children;
 
   return (
     <div className="flex flex-col gap-2">
@@ -19,7 +23,7 @@ const Home = async () => {
       />
       <Select
         storeKey="selectedSubCategory"
-        options={subCategories?.map(({ id, name }) => ({ id, name })) ?? []}
+        options={subCategories?.map(({ id, name }) => ({ id, name }))}
       />
     </div>
   );
