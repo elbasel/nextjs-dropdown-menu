@@ -1,2 +1,1 @@
-export type StoreKey = "mainCatId" | "subCatId"
-
+export type StoreKey = "mainCatId" | "exampleKey";

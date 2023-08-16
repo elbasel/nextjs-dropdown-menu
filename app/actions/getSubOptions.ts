@@ -13,7 +13,7 @@ export const getSubOptions = async (): Promise<Option[]> => {
     name,
   }));
 
-  // Logged to server side node runtime
+  // Logged to the server side node runtime
   if (!mainCat) {
     throw new Error("Invalid stored main category id: " + storedMainId);
   }

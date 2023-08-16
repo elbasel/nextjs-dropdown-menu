@@ -1,3 +1,4 @@
+// This would be a server action in the app/actions folder in a real project.
 import type { Category } from "@lib";
 import { getLocalMainCategories } from ".";
 

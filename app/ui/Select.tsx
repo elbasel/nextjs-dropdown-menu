@@ -26,13 +26,11 @@ export const Select = ({
   const onChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const optionName = event.target.value;
     const optionId = options.find((op) => op.name === optionName)?.id;
-    const environ = process.env["NODE_ENV"];
 
-    if (!optionId && environ === "development")
-      throw new Error("Invalid optionId");
+    if (!optionId) throw new Error("Invalid optionId");
 
     startSettingCategory(() => {
-      // * Could be replaced with useOptimistic if needed.
+      // * Can be replaced with useOptimistic as needed.
       setClientSideValue(optionName);
       if (!storeKey) return;
       setStoreValue(storeKey, optionId);
@@ -49,7 +47,7 @@ export const Select = ({
       id={id}
     >
       {options.map(({ id, name }) => (
-        <option key={id} value={name} onClick={(e) => console.log(e)}>
+        <option key={id} value={name}>
           {name}
         </option>
       ))}

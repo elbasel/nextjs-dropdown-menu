@@ -1,6 +1,5 @@
 "use server";
 
-import "server-only";
 import { kv } from "@vercel/kv";
 import { userId } from "@util";
 import type { StoreKey } from ".";
