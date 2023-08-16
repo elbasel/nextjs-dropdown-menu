@@ -1,0 +1,683 @@
+{
+    "code": 200,
+    "msg": "get Parent Cats with children",
+    "data": {
+        "categories": [
+            {
+                "id": 1,
+                "name": "سيارات ودرجات ومستلزماتها",
+                "description": null,
+                "children": [
+                    {
+                        "id": 13,
+                        "name": "سيارات",
+                        "description": null,
+                        "slug": "cars",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 14,
+                        "name": "قطع غيار السيارات والإكسسوارات",
+                        "description": null,
+                        "slug": "auto-parts-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 15,
+                        "name": "دراجات نارية ودبابات",
+                        "description": null,
+                        "slug": "motorcycles",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 16,
+                        "name": "دراجات هوائية",
+                        "description": null,
+                        "slug": "bicycles",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 17,
+                        "name": "مستلزمات الدراجات النارية والهوائية",
+                        "description": null,
+                        "slug": "motorcycles-bicycles-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 100,
+                        "name": "لوحات السيارات",
+                        "description": null,
+                        "slug": "vehicle-plates",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 115,
+                        "name": "dfdfdfd",
+                        "description": null,
+                        "slug": "dfdfdfd",
+                        "children": null,
+                        "disable_shipping": 0
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 2,
+                "name": "تجهيزات الأثاث والمفروشات",
+                "description": null,
+                "slug": "furniture-furnishings-fittings",
+                "children": [
+                    {
+                        "id": 18,
+                        "name": "الأثاث والمفروشات",
+                        "description": null,
+                        "slug": "furniture-furnishings",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 19,
+                        "name": "أثاث ومعدات مكتبية",
+                        "description": null,
+                        "slug": "office-furniture-equipment",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 20,
+                        "name": "ألعاب أطفال ومستلزماتها",
+                        "description": null,
+                        "slug": "kids-toys-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 21,
+                        "name": "معدات مطاعم ومطابخ",
+                        "description": null,
+                        "slug": "restaurants-kitchens-equipment",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 22,
+                        "name": "تحف وهدايا",
+                        "description": null,
+                        "slug": "modern-antique-gifts",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 103,
+                        "name": "منتجات العناية المنزلية",
+                        "description": null,
+                        "slug": "home-care-products",
+                        "children": null,
+                        "disable_shipping": 0
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 3,
+                "name": "الأجهزة الكهربائية و الجوالات وإكسسواراتها",
+                "description": null,
+                "slug": "electrical-mobiles-accessories",
+                "children": [
+                    {
+                        "id": 23,
+                        "name": "الأجهزة الكهربائية",
+                        "description": null,
+                        "slug": "electrical-devices",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 24,
+                        "name": "الجوالات",
+                        "description": null,
+                        "slug": "mobile-phones",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 25,
+                        "name": "إكسسوارات الجوالات",
+                        "description": null,
+                        "slug": "mobile-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 26,
+                        "name": "الكمبيوترات",
+                        "description": null,
+                        "slug": "computers",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 27,
+                        "name": "ملحقات الكمبيوتر",
+                        "description": null,
+                        "slug": "computer-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 28,
+                        "name": "ألعاب الفيديو  ونظارات الواقع الإفتراضي والدرونز وملحقاتها",
+                        "description": null,
+                        "slug": "video-games-vr-glassesdrones-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 29,
+                        "name": "الكاميرات",
+                        "description": null,
+                        "slug": "cameras",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 30,
+                        "name": "ملحقات الكاميرات",
+                        "description": null,
+                        "slug": "accessories-for-cameras",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 31,
+                        "name": "أجهزة ومعدات رياضية",
+                        "description": null,
+                        "slug": "fitness-equipment-devices",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 99,
+                        "name": "الألات الموسيقية والأفلام والإكسسوارات",
+                        "description": null,
+                        "slug": "musical-instruments-dvd-films-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 101,
+                        "name": "الأرقام المميزة",
+                        "description": null,
+                        "slug": "vip-numbers",
+                        "children": null,
+                        "disable_shipping": 0
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 4,
+                "name": "العقارات و الأسماء التجارية",
+                "description": null,
+                "slug": "real-estate-trade-names",
+                "children": [
+                    {
+                        "id": 32,
+                        "name": "عقارات",
+                        "description": null,
+                        "slug": "real-estates",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 33,
+                        "name": "أراضي",
+                        "description": null,
+                        "slug": "lands",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 105,
+                        "name": "الأسماء والعلامات التجارية",
+                        "description": null,
+                        "slug": "trade-and-brand-names",
+                        "children": null,
+                        "disable_shipping": 1
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 5,
+                "name": "الحيوانات ومستلزماتها",
+                "description": null,
+                "slug": "animals-accessories",
+                "children": [
+                    {
+                        "id": 34,
+                        "name": "حيوانات أليفة",
+                        "description": null,
+                        "slug": "pets-animal",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 35,
+                        "name": "حيوانات مزارع",
+                        "description": null,
+                        "slug": "farms-animal",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 36,
+                        "name": "حيوانات غريبة",
+                        "description": null,
+                        "slug": "exotic-animal",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 102,
+                        "name": "مستلزمات الحيوانات",
+                        "description": null,
+                        "slug": "animals-supplies",
+                        "children": null,
+                        "disable_shipping": 0
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 6,
+                "name": "المعدات والأدوات",
+                "description": null,
+                "slug": "equipments-tools",
+                "children": [
+                    {
+                        "id": 38,
+                        "name": "معدات خفيفة وأدوات",
+                        "description": null,
+                        "slug": "light-equipment-tools",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 39,
+                        "name": "تجهيزات رحلات وصيد وإكسسواراتها",
+                        "description": null,
+                        "slug": "fishing-hunting-equipments-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 40,
+                        "name": "قوارب و مستلزمات الأنشطة البحرية",
+                        "description": null,
+                        "slug": "boats-sea-activities",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 41,
+                        "name": "سكراب",
+                        "description": null,
+                        "slug": "scrap",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 97,
+                        "name": "معدات ثقيلة",
+                        "description": null,
+                        "slug": "heavy-equipment",
+                        "children": null,
+                        "disable_shipping": 1
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 7,
+                "name": "ملابس وأحذية وحقائب",
+                "description": null,
+                "slug": "clothing-shoes-bags",
+                "children": [
+                    {
+                        "id": 42,
+                        "name": "ملابس",
+                        "description": null,
+                        "slug": "clothes",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 43,
+                        "name": "أحذية",
+                        "description": null,
+                        "slug": "shoes",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 44,
+                        "name": "حقائب",
+                        "description": null,
+                        "slug": "bags",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 45,
+                        "name": "منتجات مدرسية ومكتبية",
+                        "description": null,
+                        "slug": "school-office-supplies",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 98,
+                        "name": "قماش و لوازم خياطة وإكسسواراتها",
+                        "description": null,
+                        "slug": "fabric-sewing-supplies-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 8,
+                "name": "أنتيك وعملات قديمة ولوحات فنية",
+                "description": null,
+                "slug": "antique-coins-art",
+                "children": [
+                    {
+                        "id": 94,
+                        "name": "أنتيك وعملات قديمة ولوحات فنية",
+                        "description": null,
+                        "slug": "antique-coins-art",
+                        "children": null,
+                        "disable_shipping": 1
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 9,
+                "name": "إكسسوارات وعطور",
+                "description": null,
+                "slug": "fragrances-accessories",
+                "children": [
+                    {
+                        "id": 52,
+                        "name": "ساعات",
+                        "description": null,
+                        "slug": "watches",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 53,
+                        "name": "نظارات وعدسات وإكسسواراتها",
+                        "description": null,
+                        "slug": "eyeglasses-lenses-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 54,
+                        "name": "مجوهرات و إكسسوارات",
+                        "description": null,
+                        "slug": "jewelry-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 55,
+                        "name": "ماكياج ومنتجات العناية الشخصية",
+                        "description": null,
+                        "slug": "makeup-personal-care-product",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 56,
+                        "name": "العطور",
+                        "description": null,
+                        "slug": "fragrances",
+                        "children": null,
+                        "disable_shipping": 0
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 10,
+                "name": "منتجات ومعدات طبية",
+                "description": null,
+                "slug": "medical-products-equipment",
+                "children": [
+                    {
+                        "id": 57,
+                        "name": "الفيتامينات والمكملات الغذائية",
+                        "description": null,
+                        "slug": "vitamin-dietary-supplements",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 58,
+                        "name": "لوازم الرعاية الصحية والأسرية",
+                        "description": null,
+                        "slug": "family-health-care",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 59,
+                        "name": "منتجات المكملات الرياضية",
+                        "description": null,
+                        "slug": "sport-nutrition",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 60,
+                        "name": "المعدات الطبية و إكسسواراتها",
+                        "description": null,
+                        "slug": "medical-equipment-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 11,
+                "name": "تجهيزات الحدائق والمسابح , المعدات الزراعية",
+                "description": null,
+                "slug": "gardens-swimming-pool-supplies-agricultural-equipment",
+                "children": [
+                    {
+                        "id": 61,
+                        "name": "مستلزمات حدائق وملحقاتها",
+                        "description": null,
+                        "slug": "garden-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 62,
+                        "name": "معدات ولوازم الزراعة",
+                        "description": null,
+                        "slug": "agriculture-equipments-accessories",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 63,
+                        "name": "مستلزمات المسابح والإكسسوارات",
+                        "description": null,
+                        "slug": "swimming-pool-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 64,
+                        "name": "أرضيات رياضية متعددة الإستخدام والعشب الطبيعي والصناعي",
+                        "description": null,
+                        "slug": "multipurpose-sport-flooring-landscaping",
+                        "children": null,
+                        "disable_shipping": 0
+                    },
+                    {
+                        "id": 65,
+                        "name": "مضخة المياه ونظام الفلترة وملحقاتها",
+                        "description": null,
+                        "slug": "water-pump-filtration-system-accessories",
+                        "children": null,
+                        "disable_shipping": 0
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 12,
+                "name": "منتجات غذائية وعطارة",
+                "description": null,
+                "slug": "food-herb-products",
+                "children": [
+                    {
+                        "id": 95,
+                        "name": "منتجات غذائية وعطارة",
+                        "description": null,
+                        "slug": "food-herb-product",
+                        "children": null,
+                        "disable_shipping": 1
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 104,
+                "name": "تكنولوجيا المعلومات",
+                "description": null,
+                "slug": "information-technology",
+                "children": [
+                    {
+                        "id": 106,
+                        "name": "الدومين",
+                        "description": null,
+                        "slug": "domain",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 107,
+                        "name": "المواقع الإلكترونية",
+                        "description": null,
+                        "slug": "websites",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 108,
+                        "name": "التطبيقات",
+                        "description": null,
+                        "slug": "applications",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 109,
+                        "name": "البرامج",
+                        "description": null,
+                        "slug": "programs",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 110,
+                        "name": "منصات التواصل الإجتماعي",
+                        "description": null,
+                        "slug": "social-media-platforms",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 111,
+                        "name": "البرمجيات والخوارزميات",
+                        "description": null,
+                        "slug": "software-and-algorithms",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 112,
+                        "name": "Software and algorithms",
+                        "description": null,
+                        "slug": "software-and-algorithms-2",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 113,
+                        "name": "Software and algorithms",
+                        "description": null,
+                        "slug": "software-and-algorithms-3",
+                        "children": null,
+                        "disable_shipping": 1
+                    },
+                    {
+                        "id": 114,
+                        "name": "Software and algorithms",
+                        "description": null,
+                        "slug": "software-and-algorithms-4",
+                        "children": null,
+                        "disable_shipping": 1
+                    }
+                ],
+                "disable_shipping": 0
+            },
+            {
+                "id": 116,
+                "name": "rtrrt",
+                "description": null,
+                "slug": "rtrrt",
+                "children": [],
+                "disable_shipping": 0
+            }
+        ],
+        "statistics": {
+            "auctions": 22,
+            "users": 14,
+            "products": 4
+        },
+        "ads_banners": [
+            {
+                "media_type": "image",
+                "duration": 5
+            },
+            {
+                "media_type": "image",
+                "duration": 5
+            },
+            {
+                "media_type": "image",
+                "duration": 5
+            }
+        ],
+        "ios_version": "1.1.2",
+        "ios_latest_version": "1.1.2",
+        "google_version": "7344",
+        "huawei_version": "7344"
+    }
+}
